@@ -41,7 +41,7 @@ def get_price(request):
                 # Model based query to get the price if the date falls on next year
                 result['product_price'] = ProductPrice.objects.get(name=product_name).next_year_price
         except Exception as e:
-            return JsonResponse({'ErrorException raised': str(e)})
+            return JsonResponse({'Exception raised': str(e)})
         return JsonResponse(result)
 
     else:
