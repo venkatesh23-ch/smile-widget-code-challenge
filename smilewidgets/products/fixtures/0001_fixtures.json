@@ -46,5 +46,23 @@
         "date_start": "2018-12-01",
         "date_end": "2019-01-01"
     }
+},
+{
+    "model": "products.productprice",
+    "pk": 1,
+    "fields": {
+        "name": "Big Widget",
+        "black_friday_price": "$800",
+        "next_year_price": "$1200"
+    }
+},
+{
+    "model": "products.productprice",
+    "pk": 2,
+    "fields": {
+        "name": "Small Widget",
+        "black_friday_price": "FREE!",
+        "next_year_price": "$125"
+    }
 }
 ]

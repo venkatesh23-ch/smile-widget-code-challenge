@@ -22,3 +22,11 @@ class GiftCard(models.Model):
     @property
     def formatted_amount(self):
         return '${0:.2f}'.format(self.amount / 100)
+
+class ProductPrice(models.Model):
+    name = models.CharField(max_length=25, help_text='Customer facing name of product')
+    black_friday_price = models.CharField(max_length=10, help_text='Price to product on black fridays')
+    next_year_price = models.CharField(max_length=10, help_text='Price of product starting fron Jan 1st of 2019')
+    
+    # def __str__(self):
+    #     return '{}'.format(self.name)
